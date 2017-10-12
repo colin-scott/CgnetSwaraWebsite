@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+  <head profile="http://gmpg.org/xfn/11"> 
+
+	
+	<link rel="stylesheet" type="text/css" href="stanford/menu.css">
+	<link rel="icon" type="image/png" href="http://cgnetswara.org/loudblog/custom/templates/default/swaraicon.png">
+
+<script><lb:post_from_dlvrit /></script>
+<lb:if_list>
+    <title>Welcome to X's CGNet Swara</title>
+</lb:if_list>
+<lb:if_single>
+    <title><lb:title /> - CGNet Swara</title>
+</lb:if_single>
+
+    <meta property="fb:app_id" content="1293600994030280" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta http-equiv="imagetoolbar" content="no" /> 
+    <meta name="description" content="<lb:sitedescription />" />
+<!--    <meta name="author" content="Rahul Gonsalves, Pixelogue" />  -->
+    <meta name="copyright" content="<lb:sitename />" /> 
+    <meta name="company" content="<lb:sitename />" /> 
+    <meta name="revisit-after" content="3 days" /> 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+    <meta http-equiv="content-language" content="en-GB" />
+    
+    
+    
+    <lb:if_single>
+	
+        <lb:if_photo><meta property="og:image" content="<lb:imagefile />" /></lb:if_photo>
+        <lb:if_nophoto><meta property="og:image" content="<lb:perm_img_link />"/></lb:if_nophoto>
+	
+        <meta property="og:description" content="<lb:message_input />"/>
+        <meta property="og:url" content="<lb:permalink_to_post />" />
+	
+	<meta property="og:title" content="<lb:title /> - CGNet Swara" />
+	
+	
+    </lb:if_single>
+    <lb:if_list>
+        <meta property="og:image" content="http://cgnetswara.org/stanford/loudblog/custom/templates/default/i/training-camp-smaller.jpg"/>
+	
+        <meta property="og:description" content="<lb:sitedescription />" />
+	<meta property="og:url" content="http://cgnetswara.org/stanford/" />
+	<meta property="og:title" content="Welcome to X's CGNet Swara" />
+
+    </lb:if_list>    
+   
+    <meta property="og:type" content="article" />
+ 
+    <link rel="stylesheet" type="text/css" href="c/master.css" />
+ 
+    <lb:rssfeedhead />
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&version=v2.8&appId=1293600994030280";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17543752-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'8c4880ac-9f17-48bb-83eb-e948d49c684b'});</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.1.min.js"></script>  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"/>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+        $('.fancybox').fancybox({
+            helpers : {
+                title : { type : 'inside' },
+            }
+        });
+  });
+</script>
+<script type="text/javascript">
+  $(window).load(function() {
+     $('div.report').each(function() {
+       im = $(this).find('img.photo');
+       para = $(this).find('div.photoright>p');
+       if (im.length && para.length) {
+         //console.log('foo ' + im.height().toString() + ' and ' + para.height().toString());
+         if (im.height() <= para.height()) {
+           $(this).find('div.audiobelowphoto').show();
+           $(this).find('div.audiobelowtext').hide();
+         }
+       }
+     });
+  });
+</script>
+
+<!--Google maps -->
+<style>
+   #map {
+    height: 250px;
+    width: 100%;
+    }
+ </style>
+<script>
+  locations = [
+  	['MP', 23.344944, 77.664510],
+  	['Dindori', 22.940903, 81.053120],
+  	['Rewa', 24.536893, 81.304107],
+  	['Mandla', 22.598084, 80.371664],
+  	['Satna', 24.601221, 80.829139],
+  	['Panna', 24.718251, 80.181543],
+  	['Sidhi', 24.390029, 81.865441],
+  	['CG', 21.315128, 81.703582],
+  	['Kawardha', 22.009056, 81.224584],
+  	['Rajnandgaon', 21.096844, 81.031068],
+  	['Surajpur', 23.214911, 82.869721],
+  	['Balrampur', 23.757925, 83.685534],
+  	['Surguja', 22.952323, 83.209669],
+  	['Korba', 22.359702, 82.752679],
+  	['Janjgir', 22.010594, 82.571492],
+  	['Sukma', 18.390804, 81.660257],
+  	['Bijapur', 18.797484, 80.813875],
+  	['Bastar', 19.197218, 81.920373],
+	['Odisha', 20.506916, 84.466284],
+  	['Malkangiri',18.344895, 81.890524]
+  	];
+   /*function initMap() {
+    var uluru = {lat: 22.902906, lng: 80.967498};
+    var map = new google.maps.Map(document.getElementById('map'), {
+     zoom: 6,
+     center: uluru
+    });
+    
+
+    for (i=0; i<locations.length;i++){
+	    var marker = new google.maps.Marker({
+	    	title: locations[i][0],
+	     	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	     	url: "http://cgnetswara.org/stanford/index.php?tag="+locations[i][0],
+	     	map: map
+	    });
+
+	    google.maps.event.addListener(marker, 'click', function() {
+		var infoWindow = new google.maps.InfoWindow;
+		var infowincontent = document.createElement('div');
+		var strong = document.createElement('strong');
+		strong.textContent = this.title;
+		infowincontent.appendChild(strong);
+		infowincontent.appendChild(document.createElement('br'));
+		var text = document.createElement('text');
+		//var dummyText = document.createElement('text');
+		//dummyText.setAttribute("id","fetchNoPosts");
+		//dummyText.textContent =this.title;// 
+		//document.getElementsByTagName('body')[0].appendChild(dummyText);
+		//fetchNoPosts.innerHTML = "<lb:no_of_posts_in_category>"+fetchNoPosts.innerHTML+"</lb:no_of_posts_in_category>";
+		text.textContent = "<lb:no_of_posts_in_category>Satna</lb:no_of_posts_in_category>";
+		infowincontent.appendChild(text);
+		infoWindow.setContent(infowincontent);
+		infoWindow.open(map, marker);
+		
+    	    });
+
+	    google.maps.event.addListener(marker, 'dblclick', function() {
+        	window.location.href = this.url;
+    	    });
+	}
+
+	
+
+   }*/
+function initMap() {
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: new google.maps.LatLng(22.902906, 80.967498),
+		zoom: 6
+	});
+	var infoWindow = new google.maps.InfoWindow;
+	// Change this depending on the name of your PHP or XML file
+	downloadUrl('http://cgnetswara.org/stanford/mapMarking.php', function(data) {
+		var xml = data.responseXML;
+		var markers = xml.documentElement.getElementsByTagName('marker');
+		Array.prototype.forEach.call(markers, function(markerElem) {
+			var name = markerElem.getAttribute('name');
+			var noOfPosts = markerElem.getAttribute('noOfPosts');
+			var point = new google.maps.LatLng(
+				parseFloat(markerElem.getAttribute('lat')),
+				parseFloat(markerElem.getAttribute('lng')));
+		var infowincontent = document.createElement('div');
+		var strong = document.createElement('strong');
+		strong.textContent = name;
+		infowincontent.appendChild(strong);
+		infowincontent.appendChild(document.createElement('br'));
+
+		var text = document.createElement('text');
+		text.textContent = noOfPosts+" posts";
+		infowincontent.appendChild(text);
+
+		var marker = new google.maps.Marker({
+			map: map,
+			position: point,
+			title: name
+		});
+
+		marker.addListener('mouseover', function() {
+			infoWindow.setContent(infowincontent);
+			infoWindow.open(map, marker);
+		});
+		marker.addListener('click', function() {
+			window.location.href = "http://cgnetswara.org/stanford/index.php?tag="+name;
+		});
+
+		});
+	});
+}
+
+function downloadUrl(url, callback) {
+	var request = window.ActiveXObject ?
+		new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest;
+	request.onreadystatechange = function() {
+		if (request.readyState == 4) {
+			request.onreadystatechange = doNothing;
+			callback(request, request.status);
+		}
+	};
+	request.open('GET', url, true);
+	request.send(null);
+}
+function doNothing() {}
+
+</script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXBHoBHfatiHqyS2hRQeYfhJ0cT1x1wAc&callback=initMap">
+  </script>
+<!--************-->
+
+
+
+</head>
+ 
+<lb:if_list>  <body id="body-index"></lb:if_list>
+<lb:if_single>  <body id="body-inside"></lb:if_single>
+    <div id="wrapper">
+
+<br>
+
+      <div id="content" class="clearfix">
+
+        <div id="nav" class="clearfix">
+        
+          <h1><a href="http://cgnetswara.org/"><img id="logo" 
+src="http://cgnetswara.org/loudblog/custom/templates/default/swaracover-small.png"
+width=220
+alt="CGNet Swara Logo" /></a></h1>
+        
+<h2 class="header">
+<table><tr>
+<td>
+          <a href="http://cgnetswara.org/about.html">About</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<!--
+</td><td>
+          <a href="http://cgnetswara.org/news.html">News & Events</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+-->
+</td><td>
+          <a href="http://cgnetswara.org/impact2.php">Impact</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+</td><td>
+          <a href="http://cgnetswara.org/recognition.html">Recognition</a>
+
+</td></td>
+</table>
+</h2>
+
+          <h2 class="slogan">CGNet Swara is a platform to discuss issues related to Central Gondwana region in India. To record a message, call us on <strong>+91-80500 68000</strong>.<lb:siteslogan /></h2>
+          
+        </div><!-- nav -->
+
+	<div id="map"></div>
+                <ul id="menu1" >
+
+
+
+                        <li class="level1">
+                                <a href="javascript:void(0)" onmouseout="hide_menu('language-option');" onmouseover="disp_menu_1('language-option');"  class="menu-option" id ="lang"> Language </a>
+                                <div class="content" id="language-option"  onmousemove="setit(0);" onmouseout="hide_menu('language-option');" onmouseover="disp_menu('language-option');" >
+                                </div>
+                        </li>
+
+
+
+                        <li class="level1">
+                                <a href="javascript:void(0)" onmouseover="disp_menu('state-option');" onmouseout="delay_remove('state-option','NREGA');" class="menu-option" id="states"> Location </a>
+                                <div class="content" id="state-option" onmousemove="setit(1);" onmouseover="disp_menu('state-option');"  onmouseout="delay_remove('state-option','NREGA');" >
+                                </div>
+                        </li>
+
+
+                        <li class="level1">
+                                <a href="javascript:void(0)"  onmouseout="hide_menu('subjects-option');" onmouseover="disp_menu_1('subjects-option');" class="menu-option" id="sub"> Subjects </a>
+                                <div class="content" id="subjects-option" onmousemove="setit(2);" onmouseout="hide_menu('subjects-option');" onmouseover="disp_menu('subjects-option');" >
+                                </div>
+                        </li>
+                        </ul>
+
+                                <ul onmouseover="disp_menu('state-option');" onmouseout="delay_remove('state-option','NREGA');">
+                                        <li>
+                                                <div class="NREGA" id="NREGA" onmouseover="disp_menu('state-option');" >
+                                                </div>
+                                        </li>
+                                </ul>
+
+
+	
+
+        <div id="primary">
+
+	  <!-- google search results -->
+	  <div id="cse" style="width:100%;"></div> 
+
+
+	
+ 	
+
+        
+        <lb:loop_postings number="5" order="desc">
+
+        <div class="report">
+
+          <h3><lb:link_permalink><lb:title /></lb:link_permalink></h3>
+          <lb:if_photo>
+             <div class="photoleft">
+                 <a class="fancybox" rel="group" data-fancybox-href=<lb:imagefile /> title="<lb:title />"><img id="logo" 
+src="http://cgnetswara.org/loudblog/custom/templates/default/swaracover-small.png"
+width=220
+alt="CGNet Swara Logo" /><!--<img src=<lb:imagefile />--> class="photo"></a>
+                 <lb:if_audio>
+
+		<div class="aud">
+                   <div class="audiobox photoaudiobox audiobelowphoto" style="display:none;">
+                     
+			<audio controls src=<lb:audiofile /> style="width: 225px;">
+                       <lb:flashplayer width="225" height="70" />
+                     </audio>
+                   
+
+		</div>
+		</div>
+                 </lb:if_audio>
+             </div>
+             <div class="photoright">
+                <lb:message />
+                <lb:if_audio>
+                 <div class="aud">
+			  <div class="audiobox photoaudiobox audiobelowtext">
+                  
+			<audio controls src=<lb:audiofile /> style="width: 225px;">
+                      	 <lb:flashplayer width="225" height="70" />
+                     	</audio>
+			</div>
+                   </div>
+                </lb:if_audio>
+             </div>
+          </lb:if_photo>
+
+          <lb:if_nophoto>
+             <lb:if_audio>
+		<div class="aud">
+             <div class="audiobox">
+		 <audio controls src=<lb:audiofile /> style="width:225px;">
+                    <lb:flashplayer width="225" height="70" />
+                 </audio>
+
+             </div>
+		</div>
+             </lb:if_audio>
+              <lb:message />
+          </lb:if_nophoto>
+
+<p>
+          <h4>Posted on: <strong><lb:posted format="M d, Y" /></strong>. Tags:
+<strong>
+
+<span class="tags">
+<lb:loop_postingtags><lb:postingtag link="true" /> 
+			</lb:loop_postingtags>
+</span>
+
+</strong></h4>
+
+
+<p></p>
+
+<lb:if_list>
+
+
+<div class="fb-like" data-href="http://cgnetswara.org/<lb:link_permalink_text></lb:link_permalink_text>" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-action="recommend"></div>
+
+</lb:if_list>
+<!--
+<a name="fb_share" type="button" share_url="http://cgnetswara.org/<lb:link_permalink_text></lb:link_permalink_text>"></a> 
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" 
+        type="text/javascript">
+</script>
+<lb:if_single>
+
+<div class="fb-comments" data-href="http://cgnetswara.org/stanford/<lb:link_permalink_text></lb:link_permalink_text>" data-numposts="5"></div>
+</lb:if_single>-->
+
+
+        </div><!-- #report -->
+        
+        </lb:loop_postings>
+<lb:if_single>
+       <script>
+	var div = $("<div class='fb-like'/>").appendTo('.report');
+       div.attr({'data-href':window.location.href, 'data-send':"true", 'data-layout':"button_count", 'data-width':"450", 'data-show-faces':"true", 'data-action':"recommend" });                                 
+          FB.XFBML.parse();
+
+	var div2 = $("<div class='fb-comments'/>").appendTo('.report');
+	div2.attr({'data-href':window.location.href, 'data-numposts':"5", 'data-order-by':"reverse_time" });                                 
+	FB.XFBML.parse();
+          </script>
+	</lb:if_single>
+        <p class="pagination"><lb:link_prev>&laquo; View Newer Reports</lb:link_prev></p>
+        <p class="pagination"><lb:link_next>View Older Reports &raquo;</lb:link_next></p>
+
+        </div><!-- #primary -->
+
+        <div id="secondary">
+
+<!-- Added by Prasun Paul -->
+<!-- Begin -->
+
+
+<!--<lb:randomimage><img alt="hello"></lb:randomimage><!-- lb function /home/stanford/web/loudblog/inc/loudblogtags.php-->
+<lb:perm_img></lb:perm_img>
+
+<!-- End -->
+<!-- Added by Prasun Paul -->
+
+<!--<img src="http://cgnetswara.org/loudblog/custom/templates/default/i/training-camp-smaller.jpg" width=220><!--random image-->
+<center>
+<font size=-1><i>Recording a report on CGNet Swara</i></font>
+</center>
+
+          <h3>Search Reports &raquo;</h3>
+
+<div id="cse-search-form" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl('005349027740482927274:igk87wluiru');
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.setSearchFormRoot('cse-search-form');    
+    customSearchControl.draw('cse', options);
+  }, true);
+</script>
+<link rel="stylesheet" href="http://cgnetswara.org/loudblog/custom/templates/default/c/search.css" type="text/css" />
+
+          </br><h2>Supported By &raquo;</h2></br>
+
+<a href="http://www.environicsindia.in/">Environics Trust</a><br>
+
+<a href="http://www.gatesfoundation.org/">Gates Foundation</a><br>
+
+<a href="http://www.hivos.org/">Hivos</a><br>
+
+<a href="http://www.icfj.org/">International Center for Journalists</a><br>
+
+<a href="http://www.sitaraindia.org/">Sitara</a><br>
+
+<a href="http://www.un.org/democracyfund/">UN Democracy Fund</a>
+
+<br/><br/><br/>
+<h2>Android App &raquo;</h2><br/>
+<a href="http://cgnetswara.org/CGNetSwara.apk">Click to Download</a>
+
+        </div><!-- #secondary -->
+
+<div class="comments">
+
+        	<lb:area_comments>
+    
+<!--
+ 			<h2 id="commentheadline">&nbsp;</h2>
+ 			<h2>Comments</h2><br>
+        	<ol id="commentlist">
+        		<lb:loop_comments>
+            	<li>
+            		<b><lb:commentname /> says on <lb:commentposted format="M j, Y @ h:i A" />:</b>
+
+<h4>            
+            		<lb:if_commentaudio>
+            		<div>
+            			<lb:commentflashplayer height="21" width="150" />
+            			<p><lb:link_commentfile>Download comment</lb:link_commentfile><br />(<lb:commentsize /> MB | <lb:commentlength /> min)</p>
+            		</div>
+            		</lb:if_commentaudio>
+            		<p><lb:commentmessage />
+</h4>
+            	</li>
+       		  </lb:loop_comments>
+        	</ol>
+
+-->
+        
+        	<lb:area_makecomment>
+            <h2>Post a Comment</h2> 
+
+        <div class="report">
+	    <p><i>To record your comment, please call
+	    and leave a message at +91-80500 68000.  Recording your
+	    comment in audio format will ensure that it is accessible
+	    to all CGNet Swara users, most of whom lack Internet
+	    access and access the reports via phone.</i></p>
+
+        	</lb:area_makecomment>    
+   		  </lb:area_comments>
+
+    	</div>
+    
+		</lb:loop_postings>
+
+</div><!-- #comments -->
+      </div><!-- #content -->
+
+<br>                
+	</div><!-- #wrapper --> 
+
+
+
+ 
+<script src="stanford/menu_load_options.js"></script>
+<script src="stanford/menu_work.js"></script>
+<script>
+
+	function modify()
+	{
+		var tags = document.getElementsByClassName("tags");
+		var i;
+
+		for (i = 0; i < tags.length; i++)
+		{
+			var res = tags[i].innerHTML;
+			var res1 = res.split("</a>");
+			//alert(res1);
+			var len2 = res1.length;
+			var j;
+			var set = false;
+			var con = "";
+			var res_con = "";
+			for(j = 0; j < len2; j++)
+			{
+				var res2 = res1[j].split('">')[1];
+				var res3 = parseInt(res2);
+				var res4 = isNaN(res3);
+				if(res4==false)
+				{
+					set = true;
+					res_con = res3;
+				}
+				else
+				{
+					con = con+res1[j]+"</a>";
+				}
+			}
+			if(set == false)
+			{
+			//alert(res);
+			}
+			else
+			{
+				var lenx = con.length;
+				con = con.substring(0,lenx-4);
+con = con+'<a href="http://cgnetswara.org/stanford/index.php?id='+res_con+'" title="All postings with id'+res_con+'">View Original Story</a>';
+				tags[i].innerHTML = con;
+			}
+		}
+	}
+
+
+	modify();
+</script>
+</body> 
+ 
+</html>
+
+

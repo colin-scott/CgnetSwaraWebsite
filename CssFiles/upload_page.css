@@ -1,0 +1,20 @@
+.input_space{
+	margin: 10px;
+	
+
+}
+.submit_button {
+	width: 70px;
+	height: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.copy_button{
+	width: 175px;
+	height: 35px; 
+	margin: 3px;
+}
+.upload_content{
+	margin-bottom: 15px;
+}

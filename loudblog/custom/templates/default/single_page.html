@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><lb:title /> - CGNet Swara</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta property="fb:app_id" content="1293600994030280" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="imagetoolbar" content="no" /> 
+<meta name="description" content="<lb:sitedescription />" />
+<meta name="copyright" content="<lb:sitename />" /> 
+<meta name="company" content="<lb:sitename />" /> 
+<meta name="revisit-after" content="3 days" /> 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+<meta http-equiv="content-language" content="en-GB" />
+<meta property="og:type" content="article" />
+
+<!--For single post-->
+<lb:if_photo><meta property="og:image" content="<lb:imagefile />" /></lb:if_photo>
+<lb:if_nophoto><meta property="og:image" content="<lb:perm_img_link />"/></lb:if_nophoto>	
+<meta property="og:description" content="<lb:message_input />"/>
+<meta property="og:url" content="<lb:permalink_to_post_new />" />
+<meta property="og:title" content="<lb:title /> - CGNet Swara" />
+
+<link rel="stylesheet" href="assets/css/complete.css" type="text/css" />
+<link rel="icon" type="image/png" href="http://cgnetswara.org/stanford/loudblog/custom/templates/default/images/cgnetLogo.png">
+
+
+<lb:rssfeedhead />
+
+
+<!--[if lt IE 9]>
+<script src="../assets/js/html5shiv.min.js"></script>
+<script src="../assets/js/respond.min.js"></script>
+<!--[endif]-->
+
+<!-- for audio player -->
+<script src="audiojs/audio.min.js"></script>
+<script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+</script>
+<!-- -->
+
+
+</head>
+<body>
+<!--<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>-->
+<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+<div class="container">
+  <header id="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_top">
+          <div class="header_top_left">
+            <ul class="top_nav">
+              <li><a href="http://cgnetswara.org/stanford/index_new.php">Home</a></li>
+              <li><a href="about_new.html">About</a></li>
+              <li><a href="recognition_new.html">Recognition</a></li>
+              <li><a href="contact_new.html">Contact</a></li>  
+            </ul>
+          </div>          
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="http://cgnetswara.org/stanford/index_new.php" class="logo"><img src="images/cgnetLogo.png" alt=""></a></div>          
+          <div class="heading-content">
+		<h4>CGNet Swara is a platform to discuss issues related to Central Gondwana region in India.</h4>
+		<h4> To record a message, call us on +91-8050068000.</h4>
+	  </div> 
+	  <div class="social_area" style="margin-right: 15px;">
+            <ul class="social_nav" >
+              <li class="facebook"><a href="https://www.facebook.com/CGNetSwara/"></a></li>
+              <li class="twitter"><a href="https://twitter.com/CGnet_Swara"></a></li>
+              <li class="mail"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  <section id="contentSection">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="left_content">
+
+	<lb:loop_postings number="1" order="desc">
+
+          <div class="single_page">
+            <ol class="breadcrumb">
+              <li><a href="http://cgnetswara.org/stanford/index_new.php">Home</a></li>                            
+            </ol>
+            <h1><lb:title /></h1>
+            <div class="post_commentbox"> 
+              <a href="#"><i class="fa fa-user"></i><lb:author_name /></a> 
+              <span><i class="fa fa-calendar"></i><lb:posted format="M d, Y" /></span> 
+              <i class="fa fa-tags"></i>
+              
+	      <lb:loop_postingtags_new><lb:postingtag_new link="true" /></lb:loop_postingtags_new>
+
+            </div>
+	    
+ 	    	
+            <div class="single_page_content"> 
+		<gcse:searchresults> </gcse:searchresults> 
+
+		<!--<div id="cse" style="width:100%;"></div>-->
+	
+		<lb:if_photo>
+                <img class="img-center" src=<lb:imagefile /> alt="">
+		</lb:if_photo>
+		
+		<lb:if_nophoto>
+                <img class="img-center" src=<lb:perm_img_link /> alt="">
+		</lb:if_nophoto>
+		<!-- <div style="border: 1px solid; text-align: center"> -->
+                <audio src=<lb:audiofile /> >                  
+                </audio>
+		<!-- </div> -->
+                <blockquote><lb:message /></blockquote>
+
+              <div class="contact_details">
+		<lb:contactnumbers />
+              </div>
+
+              <div class="facebook_details">
+                <!-- <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up">Like</i> </button> -->
+		<div class="fb-like" data-href="<lb:permalink_to_post_new />" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+		<div class="fb-comments" data-href="<lb:permalink_to_post_new />" data-numposts="5"></div>
+              </div>
+
+            </div>
+            
+            
+          </div>
+	</lb:loop_postings>
+
+        </div>
+      </div>
+      <nav class="nav-slit">
+	<lb:prevpost />
+
+	<!--<a class="prev" href="<lb:prevpost_link />"><span class="icon-wrap"><i class="fa fa-angle-left"></i></span>
+        <div>		
+          <lb:prevpost />
+        </div>
+        </a> -->
+	
+	<lb:nextpost />
+	<!--<a class="next" href="#"> <span class="icon-wrap"><i class="fa fa-angle-right"></i></span>
+        <div>
+          <h3></h3>
+          <img src="images/114606.jpg" alt=""/> 
+        </div>
+        </a> -->
+
+
+      </nav>
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+
+
+          <div class="single_sidebar wow fadeInDown">            
+            <h2><span>Languages</span></h2>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=hindi">Hindi</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=gondi">Gondi</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=english">English</a></li>   	                 
+                </ul>
+              </div>             
+            </div>
+          </div>
+
+
+          <div class="single_sidebar wow fadeInDown">            
+            <h2><span>Subjects</span></h2>
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="category">
+                <ul>
+                  <li class="cat-item active"><a href="http://cgnetswara.org/stanford/index_new.php?tag=water">Water</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=handpump">Handpump</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=electricity">Electricity</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=forest">Forest</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=nrega">NREGA</a></li>
+                  <li class="cat-item"><a href="http://cgnetswara.org/stanford/index_new.php?tag=land">Land</a></li>
+                </ul>
+              </div>             
+            </div>
+          </div>
+
+          <div class="single_sidebar wow fadeInDown"> 
+		          
+            <h2><span>Location</span></h2>
+            <div class="tab-content">
+              <div id="map">Map appears here</div>          
+            </div>
+          </div>
+
+	<h3>Search Reports &raquo;</h3>
+	<gcse:searchbox></gcse:searchbox>	
+
+        </aside>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="footer_bottom">
+      <!--<p class="copyright">Copyright &copy; CGNet Swara</p>-->
+    </div>
+  </footer>
+</div>
+<script src="assets/js/complete.js"></script>
+<script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXBHoBHfatiHqyS2hRQeYfhJ0cT1x1wAc&callback=initMap">
+</script>
+</body>
+</html>

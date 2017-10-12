@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+   #map {
+    height: 400px;
+    width: 100%;
+    }
+  </style>
+ </head>
+ <body>
+  <h3>My Google Maps Demo</h3>
+  <div id="map"></div>
+  <script>
+  locations = [
+  	['MP', 23.344944, 77.664510],
+  	['Dindori', 22.940903, 81.053120],
+  	['Rewa', 24.536893, 81.304107],
+  	['Mandla', 22.598084, 80.371664],
+  	['Satna', 24.601221, 80.829139],
+  	['Panna', 24.718251, 80.181543],
+  	['Sidhi', 24.390029, 81.865441],
+  	['CG', 21.315128, 81.703582],
+  	['Kawardha', 22.009056, 81.224584],
+  	['Rajnandgaon', 21.096844, 81.031068],
+  	['Surajpur', 23.214911, 82.869721],
+  	['Balrampur', 23.757925, 83.685534],
+  	['Surguja', 22.952323, 83.209669],
+  	['Korba', 22.359702, 82.752679],
+  	['Janjgir', 22.010594, 82.571492],
+  	['Sukma', 18.390804, 81.660257],
+  	['Bijapur', 18.797484, 80.813875],
+  	['Bastar', 19.197218, 81.920373]
+  	];
+   function initMap() {
+    var uluru = {lat: 24.536893, lng: 81.304107};
+    var map = new google.maps.Map(document.getElementById('map'), {
+     zoom: 6,
+     center: uluru
+    });
+    for (i=0; i<locations.length;i++){
+	    var marker = new google.maps.Marker({
+	    	title: locations[i][0],
+	     	position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+	     	//url: "http://cgnetswara.org/stanford/index.php?tag="+location[i][0],
+	     	map: map
+	    });
+	    google.maps.event.addListener(marker, 'click', function() {
+        	window.location.href = "http://cgnetswara.org/stanford/index.php?tag="+this.title;
+    	});
+	}
+
+	
+
+   }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXBHoBHfatiHqyS2hRQeYfhJ0cT1x1wAc&callback=initMap">
+  </script>
+ </body>
+</html>
